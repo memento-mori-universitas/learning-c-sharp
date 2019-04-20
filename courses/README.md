@@ -21,8 +21,8 @@ namespace Form
   {
     static void Main(string[] args)
     {
-		// Create Variables
-		string name = "Shadow";
+    // Create Variables
+    string name = "Shadow";
     string breed = "Golden Retriever";
     int age = 5;
     double weight = 65.22;
@@ -72,3 +72,31 @@ int myInt = (int)myDouble;
 
 For a full list of Convert class built-in methods, check out https://docs.microsoft.com/en-us/dotnet/api/system.convert?view=netframework-4.7.2.
 
+There are some use cases that we cannot cast automatically, so we have to use methods build-in methods. An example of this is converting an string to an integer and vice-versa. https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
+
+```
+using System;
+
+namespace FavoriteNumber
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Ask user for fave number
+      Console.Write("Enter your favorite number!: ");
+      
+       try
+       {
+           int faveNumber = Convert.ToInt32(Console.ReadLine());
+           Console.WriteLine($"Your favorite number is {faveNumber}.");
+       }
+       catch (FormatException)
+       {
+           Console.WriteLine("Unable to parse");
+       }
+        
+    }
+  }
+}
+```
