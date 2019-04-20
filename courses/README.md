@@ -8,7 +8,7 @@ C# is **strongly typed** which requires we specify us to specify the data type w
 
 ### Data Types
 
-![image](https://s3.amazonaws.com/codecademy-content/courses/learn-c-sharp/data-types-variables/C%23_DataTypes_v3-01-01.svg)
+https://s3.amazonaws.com/codecademy-content/courses/learn-c-sharp/data-types-variables/C%23+Data+Types+Cheat+Sheet.pdf
 
 Simple example of using the most common types in a program
 
