@@ -6,5 +6,5 @@
 
 C# is **strongly typed** which requires we specify us to specify the data type we are using. It is also **statically-typed** which means it will check we used the correct type *before* running the program.
 
-![image](https://user-images.githubusercontent.com/1566236/56460281-5da29800-636e-11e9-89ee-2cb73f71d185.png)
+![image](https://s3.amazonaws.com/codecademy-content/courses/learn-c-sharp/data-types-variables/C%23_DataTypes_v3-01-01.svg)
 
