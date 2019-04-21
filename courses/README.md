@@ -100,3 +100,6 @@ namespace FavoriteNumber
   }
 }
 ```
+
+### Working with Numbers
+
