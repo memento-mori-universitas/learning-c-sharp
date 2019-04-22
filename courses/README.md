@@ -103,3 +103,127 @@ namespace FavoriteNumber
 
 ### Working with Numbers
 
+In C# we have different type of numbers and depending in our needs we can choose appropiately
+
+**Int**
+
+An int is a whole integer value, it is a good way to count unit of things with them.
+
+**Double and Decimal**
+
+If we need to define a decimal value we have: float, double & decimal.
+
+Those types are good for measuring precise location of an object in 3D space.
+
+A *double* is usually the best choice because it is more precise than a *float* and faster to process than a *decimal*.
+
+However, for financial applications *decimal* is the best choice.
+
+```
+// Int
+int variableName = 7;
+
+// Double
+double variableName = 39.76876;
+
+// Decimal
+decimal variableName = 489872.76m;
+```
+
+#### Arithemtic Operators
+
+The following arithmetic operators are supported by C#:
+
+```
+addition +
+subtraction -
+multiplication *
+division /
+```
+
+When using operators, it’s important to pay attention to data types. If we use two integers, it will return an integer every time. However, if we combine an integer with a double, the answer will be a double.
+
+We can also use shorthand operators
+
+```
+using System;
+
+namespace MakingProgress
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // declare steps variable
+			int steps = 0;
+
+      // Two steps forward 
+			steps = steps + 2;
+
+      // One step back 
+			steps = steps--;
+
+      // Print result to the console
+			System.Console.WriteLine(steps);
+    }
+  }
+}
+```
+
+#### Modulus
+
+A modulus returns the *remainder* of what is left over when we divide a number by another.
+
+```
+int eggs = 56;
+int crateAmount = 12;
+
+int eggsLeftOver = eggs % crateAmount; 
+Console.Write(eggsLeftOver); // prints 8
+```
+
+Modulus can also be used to return if a number is odd or even
+
+```
+int myNum = 85939824;
+Console.Write(myNum % 2); // prints 0, so number is even
+```
+
+#### Built-In Methods
+
+This are the most used methods, however there are many more. Please see the documenation here: https://docs.microsoft.com/en-us/dotnet/api
+
+**Math.Abs()** — will find the absolute value of a number. Example: Math.Abs(-5) returns 5.
+
+**Math.Sqrt()** — will find the square root of a number. Example: Math.Sqrt(16) returns 4.
+
+**Math.Floor()** — will round the given double or decimal down to the nearest whole number. Example: Math.Floor(8.65) returns 8.
+
+**Math.Min()** — returns the smaller of two numbers. Example: Math.Min(39, 12) returns 12.
+
+```
+using System;
+
+namespace LowestNumber
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Starting variables 
+      int numberOne = 12932;
+      int numberTwo = -2828472;
+
+      // Use built-in methods and save to variable 
+			double numberOneSqrt = Math.Floor(Math.Sqrt(numberOne));
+
+      // Use built-in methods and save to variable 
+			double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberTwo)));
+
+      // Print the lowest number
+			System.Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
+    }
+  }
+}
+
+```
