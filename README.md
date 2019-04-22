@@ -1,4 +1,4 @@
-# Learning C Sharp Project
+# Learning C # Project
       
 This repository is to manage the learning of a specific skillset.
 
