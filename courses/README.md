@@ -275,7 +275,10 @@ System.Console.WriteLine($"Your favorite musician is {yourFaveMusician} and mine
 #### Methods of String
 
 .Length
+Returns the length of the string
+
 .IndexOf()
+Returns position of character or substring
 
 ```
 myFaveMusician.Length; // returns the length of the string
