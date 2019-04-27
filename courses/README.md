@@ -274,10 +274,12 @@ System.Console.WriteLine($"Your favorite musician is {yourFaveMusician} and mine
 
 #### Methods of String
 
-.Length
+.Length;
+
 Returns the length of the string
 
-.IndexOf()
+.IndexOf();
+
 Returns position of character or substring
 
 ```
