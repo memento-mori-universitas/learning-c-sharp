@@ -227,3 +227,58 @@ namespace LowestNumber
 }
 
 ```
+
+### Working with Text
+
+Defining a string is as follows:
+
+```
+string variableName = "puppy";
+```
+
+You can also escape characters with the backslash `\`
+
+```
+string withSlash = "Ifemelu said, \"Hello!\"";
+```
+
+Inserting a newline requires `\n`
+
+```
+string newLine = "Something \n here";
+```
+
+#### String Concatenation
+
+String concatenation is when we combine strings using the addition symbol (+), literally adding one string to another. 
+
+```
+string yourFaveMusician = "David Bowie";
+string myFaveMusician = "Solange";
+
+Console.WriteLine("Your favorite musician is " + yourFaveMusician + " and mine is " + myFaveMusician + ".");
+```
+
+Something to remember is that if we want to concatenate a string with another data type, C# will simply convert it to a string.
+
+#### String Interpolation
+
+Another way to append string or concatenate is using interpolation
+
+```
+string yourFaveMusician = "David Bowie";
+string myFaveMusician = "Solange";
+
+System.Console.WriteLine($"Your favorite musician is {yourFaveMusician} and mine is {myFaveMusician}.");
+```
+
+#### Methods of String
+
+.Length
+.IndexOf()
+
+```
+myFaveMusician.Length; // returns the length of the string
+myFaveMusician.IndexOf("a"); // returns position of character or substring
+```
+
