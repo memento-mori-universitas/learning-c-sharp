@@ -287,3 +287,94 @@ myFaveMusician.Length; // returns the length of the string
 myFaveMusician.IndexOf("a"); // returns position of character or substring
 ```
 
+.Substring()
+
+Grabs part of a string using the specified character position and continues until the end of the string
+
+```
+string plantName = "Cactaceae, Cactus";
+string commonMame = plantName.Substring(11) // returns Cactus
+```
+
+**Bracket Notation**
+
+Uses an integer to identify a particular value in a collection.
+
+```
+string plantName = "Cactaceae, Cactus";
+int charPosition = plantName.IndexOf("u"); // returns 15
+char u = plantName[charPosition]; // returns u
+```
+
+Example of return first letter and last name
+
+```
+using System;
+
+namespace NameGrab
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // User Name
+      	string name = "Farhad Hesam Abbasi";
+
+      // Get first letter
+	int firstLetterPos = name.IndexOf("F");
+	char firstLetter = name[firstLetterPos];
+	
+      // Get last name
+	int lastNamePos = name.IndexOf("A");
+	string lastName = name.Substring(lastNamePos);
+	
+      // Print results
+	System.Console.WriteLine($"{firstLetter} {lastName}.");
+
+    }
+  }
+}
+```
+
+.ToUpper();
+
+Returns all string in uppercase
+
+.toLower();
+
+Returns all string in lowercase
+
+
+```
+using System;
+
+namespace MovieScript
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Script line
+      	string script = "Close on a portrait of the HANDSOME PRINCE -- as the BEAST'S giant paw slashes it.";
+
+      // Get camera directions
+      	int charPosition = script.IndexOf("Close");
+      	int length = "Close on".Length;
+      	string cameraDirections = script.Substring(charPosition, length);
+
+      // Get scene description
+      	charPosition = script.IndexOf("a portrait");
+      	string sceneDescription = script.Substring(charPosition);
+
+      // Make camera directions uppercase
+	cameraDirections = cameraDirections.ToUpper();
+
+      // Make scene description lowercase
+	sceneDescription = sceneDescription.ToLower();
+
+      // Print results
+	System.Console.WriteLine($"{cameraDirections} {sceneDescription}");
+    }
+  }
+}
+```
