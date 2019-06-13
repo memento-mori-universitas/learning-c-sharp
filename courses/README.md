@@ -378,3 +378,26 @@ namespace MovieScript
   }
 }
 ```
+### Logic
+
+In C# we represent booleans with the data type `bool`.
+
+`bool variableName = true;`
+
+#### Comparison Operators
+
+Equals: `==`
+Inequality operator: `!=`
+Less than: `<`
+Greater than: `>`
+Less than or equal to: `<=`
+Greater than or equal to: `>=`
+
+In practice it would look like so:
+
+```
+bool answer = 3 < 75; 
+Console.WriteLine(answer); // prints True
+```
+
+
